@@ -1,0 +1,41 @@
+Source: aiohttp-session-file
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+ python3-aiofiles,
+ python3-aiohttp (>= 3.6.2),
+ python3-aiohttp-session (>= 2.9.0),
+ python3-pytest,
+ python3-pytest-aiohttp,
+Standards-Version: 4.7.0
+Homepage: https://github.com/zhangkaizhao/aiohttp-session-file
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Vitexus/aiohttp-session-file.git
+Vcs-Browser: https://github.com/Vitexus/aiohttp-session-file
+
+Package: python3-aiohttp-session-file
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-aiofiles,
+ python3-aiohttp (>= 3.6.2),
+ python3-aiohttp-session (>= 2.9.0),
+Description: file sessions store for aiohttp.web
+ The library provides file sessions store for aiohttp.web.
+ .
+ This package provides support for storing aiohttp sessions in files,
+ which can be useful for applications that need persistent session
+ storage without requiring a database or memory store.
+ .
+ Features:
+  * File-based session storage
+  * Compatible with aiohttp.web
+  * Asynchronous file operations using aiofiles
+  * Configurable session parameters (cookie name, domain, max age, etc.)

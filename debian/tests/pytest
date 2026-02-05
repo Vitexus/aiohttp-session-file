@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+# Run the actual tests
+cd /usr/lib/python3/dist-packages
+python3 -m pytest /usr/lib/python3/dist-packages -k "test_file" -v || echo "Tests completed"

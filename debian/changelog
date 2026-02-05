@@ -1,0 +1,7 @@
+aiohttp-session-file (0.0.3-1) unstable; urgency=medium
+
+  * Initial release.
+  * Package provides file sessions store for aiohttp.web
+  * Support for Python 3.5+ and aiohttp 3.6.2+
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Wed, 05 Feb 2025 12:45:56 +0100

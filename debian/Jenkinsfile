@@ -4,7 +4,7 @@
 
 String[] distributions = ['debian:bookworm', 'debian:trixie', 'debian:forky',  'ubuntu:noble']
 
-# 'ubuntu:jammy',  pbuilder-satisfydepends-dummy : Depends: python3-pytest-aiohttp which is a virtual package and is not provided by any available package
+// 'ubuntu:jammy',  pbuilder-satisfydepends-dummy : Depends: python3-pytest-aiohttp which is a virtual package and is not provided by any available package
 
 String vendor = 'vitexsoftware'
 //String distroFamily = ''
